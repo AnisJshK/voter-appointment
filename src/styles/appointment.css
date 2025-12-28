@@ -1,0 +1,165 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+}
+
+/* ---------- PAGE LAYOUT ---------- */
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ---------- LEFT TABS ---------- */
+.tabs {
+  width: 160px;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.tabs button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 6px;
+  background: #f1f3f8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tabs button.active {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+}
+
+/* ---------- MAIN CONTENT ---------- */
+.content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+/* ---------- CARD ---------- */
+.card {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+}
+
+/* ---------- HEADINGS ---------- */
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* ---------- FORMS ---------- */
+.card input,
+.card select,
+.card textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.card textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.card button {
+  padding: 8px 14px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #1e4fd6;
+}
+
+/* ---------- CHECKBOX ---------- */
+.checkbox,
+.card label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+/* ---------- TABLE ---------- */
+table {
+  width: 100%;
+  margin-top: 12px;
+  border-collapse: collapse;
+  background: white;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+table th {
+  background: #f1f3f8;
+  text-align: left;
+}
+
+table td button {
+  margin-right: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* ---------- SUB TABS (SLOT TYPE / TIME) ---------- */
+.sub-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.sub-tabs button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #e5e7eb;
+}
+
+.sub-tabs button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* ---------- DISABLED ---------- */
+select:disabled,
+input:disabled {
+  background: #eee;
+  cursor: not-allowed;
+}
+
+/* ---------- EMPTY STATE ---------- */
+table td[colspan] {
+  text-align: center;
+  color: #666;
+}
